@@ -72,13 +72,13 @@ SELECT *
 FROM Students
 ORDER BY Age DESC
 
---Task 8 Using Aliases
+-- Task 8 Using Aliases
 
 --Write a query to display FirstName and LastName concatenated as FullName, along with Grade. Use an alias for the concatenated column.
 SELECT FirstName + ' ' + LastName as FullName, Grade
 FROM Students 
 
---Task 9 Advanced Insertion
+-- Task 9 Advanced Insertion
 
 --Create a new table called Graduates with the same structure as Students
 --Insert all students from the Students table who have a grade of '12th' into the Graduates table.
@@ -87,3 +87,12 @@ SELECT *
 INTO Graduates
 FROM Students
 WHERE Grade = '12th'
+
+-- Task 10 View Creation
+
+--Create a view called v_StudentsByGrade that shows FullName (concatenated FirstName and LastName) and Grade of all students.
+
+CREATE VIEW v_StudentsByGrade
+AS
+    SELECT FirstName + ' ' + LastName as FullName, Grade
+    FROM Students 
