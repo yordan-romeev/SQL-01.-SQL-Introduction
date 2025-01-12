@@ -46,3 +46,15 @@ WHERE StudentID = 2;
 
 DELETE FROM Students
 WHERE StudentID = 3
+
+-- Task 6 Filtering Rows
+
+--Write a query to select students with the Grade of '10th'
+SELECT *
+FROM Students
+WHERE Grade = '10th'
+
+--Use the BETWEEN operator to find students whose Age is between 14 and 16.
+SELECT *
+FROM Students
+WHERE Age BETWEEN 14 AND 16
