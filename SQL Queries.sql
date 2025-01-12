@@ -21,4 +21,7 @@ VALUES  (1, 'John', 'Doe', 15, '10th'),
 -- Task 3 Querying Data
 
 SELECT * FROM School
+
+SELECT FirstName, Grade 
+FROM School
 WHERE Age > 14
