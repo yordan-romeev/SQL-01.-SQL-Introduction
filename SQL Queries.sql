@@ -18,3 +18,7 @@ VALUES  (1, 'John', 'Doe', 15, '10th'),
         (4, 'Jack', 'Smile', 14, '9th'),
         (5, 'John', 'Wick', 13, '8th')
 
+-- Task 3 Querying Data
+
+SELECT * FROM School
+WHERE Age > 14
