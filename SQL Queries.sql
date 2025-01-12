@@ -58,3 +58,16 @@ WHERE Grade = '10th'
 SELECT *
 FROM Students
 WHERE Age BETWEEN 14 AND 16
+
+-- Task 7 Sorting Results
+
+--Write a query to retrieve all students, sorted by LastName in ascending order.
+SELECT *
+FROM Students
+ORDER BY LastName DESC
+
+--Modify the query to sort by Age in descending order.
+SELECT *
+FROM Students
+ORDER BY Age DESC
+
