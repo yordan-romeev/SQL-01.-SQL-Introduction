@@ -3,6 +3,8 @@
 --Create a database called School
 CREATE DATABASE School
 
+USE  School
+
 --Inside the database, create a table named Students with the following columns
 CREATE TABLE Students
 (
