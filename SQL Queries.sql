@@ -71,3 +71,10 @@ SELECT *
 FROM Students
 ORDER BY Age DESC
 
+--Task 8 Using Aliases
+
+--Write a query to display FirstName and LastName concatenated as FullName, along with Grade. Use an alias for the concatenated column.
+SELECT FirstName + ' ' + LastName as FullName, Grade
+FROM Students 
+
+--
