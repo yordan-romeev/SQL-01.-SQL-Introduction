@@ -20,8 +20,18 @@ VALUES  (1, 'John', 'Doe', 15, '10th'),
 
 -- Task 3 Querying Data
 
+--Write a query to retrieve all columns from the Students table.
 SELECT * FROM School
 
+--Retrieve only the FirstName and Grade of students whose Age is greater than 14
 SELECT FirstName, Grade 
 FROM School
 WHERE Age > 14
+
+-- Task 4 Updating Data
+
+UPDATE School
+SET Grade = '11th'
+WHERE StudentID = 2;
+
+
