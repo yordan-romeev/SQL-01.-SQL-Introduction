@@ -34,4 +34,12 @@ UPDATE School
 SET Grade = '11th'
 WHERE StudentID = 2;
 
+-- Task 5 Deleting Data
+
+--Delete a student record where the StudentID is 3.
+--Be sure to use the WHERE clause to avoid deleting all rows accidentally.
+
+DELETE FROM School
+WHERE StudentID = 3
+
 
