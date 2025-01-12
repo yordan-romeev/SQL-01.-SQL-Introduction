@@ -20,7 +20,8 @@ VALUES  (1, 'John', 'Doe', 15, '10th'),
         (2, 'Jane', 'Austin', 15, '10th'),
         (3, 'Peter', 'Norton', 14, '9th'),
         (4, 'Jack', 'Smile', 14, '9th'),
-        (5, 'John', 'Wick', 13, '8th')
+        (5, 'John', 'Wick', 13, '8th'),
+        (6, 'Kai', 'Hansen', 17, '12th')
 
 -- Task 3 Querying Data
 
@@ -77,4 +78,12 @@ ORDER BY Age DESC
 SELECT FirstName + ' ' + LastName as FullName, Grade
 FROM Students 
 
---
+--Task 9 Advanced Insertion
+
+--Create a new table called Graduates with the same structure as Students
+--Insert all students from the Students table who have a grade of '12th' into the Graduates table.
+
+SELECT * 
+INTO Graduates
+FROM Students
+WHERE Grade = '12th'
